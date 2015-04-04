@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-<link rel="stylesheet" href="style.css">
+	<title>Spectrum - Turns bears into bunnies</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<section class="forms slider-wrap">
+<div class="slider" id="slider">
+
+	<div class="slide">
+		<form action="">
+		<div id="detailsInput">
+			<label for="projectTitle"><p>Title of your Project:</p></label>
+			<input type="text" class="text"><br><br>
+			<label for="projectDescription"><p>Describe your Project:</p></label>
+			<textarea name="projectDescription" id="" cols="70" rows="10"></textarea>
+		</div>  <div class="buttons">
+		<input class="submit" type="submit"></div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div id="dimensionInput">
+			<label for="dimensions"><p>Dimensions:</p><input class="dime" type="number" name="width[]">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]"><select name="Measurements">
+			<option value="px">Pixels (px)</option>
+			<option value="mm">Millimeters (mm)</option>
+			</select></label>
+		</div>  <div class="buttons">
+		<input class="add" type="button" value="Add another Dimension" onClick="addInput('dimensionInput', 'dimension');"><input class="submit" type="submit"></div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div id="platformInput">
+			<label for="Platform"><p>Platform:</p></label>
+			<select name="Platform"><option value="300dpi">Print</option><option value="100dpi">Digital</option></select><input type="text">
+		</div>
+		<div class="buttons">
+		<input class="add" type="button" value="Add another Platform" onClick="addInput('platformInput', 'platform');">
+		<input class="submit" type="submit"></div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div id="fileInput">
+			<label for="Assets"><p>Upload a File</p></label>
+			 <input type="file" name="pic" accept="image/*">
+		</div>
+		<div class="buttons">
+		<input class="add" type="button" value="Add another file" onClick="addInput('fileInput', 'file');"><input class="submit" type="submit">
+		</div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div id="colourInput">
+			 <label for="Colour"><p>Colour Preference?</p></label>
+			 <input class="left colour" type="color" name="favcolor" value="#ff0000">
+		</div>
+		<div class="buttons">
+		<input class="add" type="button" value="Add another Colour" onClick="addInput('colourInput', 'colour');"><input class="submit" type="submit">
+		</div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div id="styleInput">
+			<label for="style"><p>Style Preference</p></label>
+			<input type="text" class="text" name="URL" placeholder="Enter URL...">
+		</div><div class="buttons"><input class="add" type="button" value="Add another preference" onClick="addInput('styleInput', 'style');"><input class="submit" type="submit"></div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div class="input">
+		<label for="budget"><p>Budget: </p><br>Range
+		<input class="range" type="number" name="Range"> to <input class="range" type="number">
+		</div><div class="buttons">
+		<input class="submit" type="submit"></div>
+		</form>
+	</div>
+
+	<div class="slide">
+		<form action="">
+		<div class="input">
+		<label for="Notes"><p>Notes</p></label><br>
+		<textarea rows="10" cols="70" name="notes">
+		</textarea></div><div class="buttons">
+		<input class="submit" type="submit">
+		</div>
+		</form>
+	</div>
+
+</div>
+
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/slider.js"></script>
 <script>
-	
+
 var counter = 1;
 var limit = 20;
 function addInput(divName, inputType){
@@ -37,98 +137,20 @@ function addInput(divName, inputType){
 		          newdiv.innerHTML = "<input type='text' class='text' name='URL' placeholder='Enter URL...''>";
 		          counter++;
 		          break;
-
-
      		}
           document.getElementById(divName).appendChild(newdiv);
      }
 };
 
 
-function removeInput(divName){
-	var elem = document.getElementById("dimensionInput");
-	elem.parentNode.removeChild(elem);
-	
+function removeInput(divName) {
+	//var elem = document.getElementById("dimensionInput");
+	//elem.parentNode.removeChild(elem);
+	console.log(this);
 };
+Slider.init({
+	domElement: '#slider'
+});
 </script>
-
-
-</head>
-<body>
-	
-<section class="forms">
-<form action="">
-
-<div id="detailsInput">
-	<label for="projectTitle"><p>Title of your Project:</p></label>
-	<input type="text" class="text"><br><br>
-	<label for="projectDescription"><p>Describe your Project:</p></label>
-	<textarea name="projectDescription" id="" cols="70" rows="10"></textarea>
-</div>  <div class="buttons">
-<input class="submit" type="submit"></div>
-
-</form>
-<form action="">
-
-<div id="dimensionInput">
-	<label for="dimensions"><p>Dimensions:</p><input class="dime" type="number" name="width[]">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]"><select name="Measurements">
-	<option value="px">Pixels (px)</option>
-	<option value="mm">Millimeters (mm)</option>
-	</select></label>
-</div>  <div class="buttons">
-<input class="add" type="button" value="Add another Dimension" onClick="addInput('dimensionInput', 'dimension');"><input class="submit" type="submit"></div>
-
-</form>
-<form action="">
-	
-<div id="platformInput">
-	<label for="Platform"><p>Platform:</p></label>
-	<select name="Platform"><option value="300dpi">Print</option><option value="100dpi">Digital</option></select><input type="text">
-</div><div class="buttons">
-<input class="add" type="button" value="Add another Platform" onClick="addInput('platformInput', 'platform');">
-<input class="submit" type="submit"></div>
-</form>
-<form action="">
-<div id="fileInput"><label for="Assets"><p>Upload a File</p></label>
-	  <input type="file" name="pic" accept="image/*">
-</div><div class="buttons">
-<input class="add" type="button" value="Add another file" onClick="addInput('fileInput', 'file');"><input class="submit" type="submit">
-</div>
-</form>
-<form action="">
-<div id="colourInput">
-	 <label for="Colour"><p>Colour Preference?</p></label>
-	 <input class="left colour" type="color" name="favcolor" value="#ff0000">
-</div>
-<div class="buttons">
-<input class="add" type="button" value="Add another Colour" onClick="addInput('colourInput', 'colour');"><input class="submit" type="submit">
-</div>
-</form>
-
-<form action="">
-<div id="styleInput">
-	<label for="style"><p>Style Preference</p></label>
-	<input type="text" class="text" name="URL" placeholder="Enter URL...">
-</div><div class="buttons"><input class="add" type="button" value="Add another preference" onClick="addInput('styleInput', 'style');"><input class="submit" type="submit"></div>
-</form>
-
-<form action="">
-
-<div class="input">
-<label for="budget"><p>Budget: </p><br>Range
-<input class="range" type="number" name="Range"> to <input class="range" type="number">
-</div><div class="buttons">
-<input class="submit" type="submit"></div>
-</form>
-
-<form action="">
-<div class="input">
-<label for="Notes"><p>Notes</p></label><br>
-<textarea rows="10" cols="70" name="notes">
-</textarea></div><div class="buttons">
-<input class="submit" type="submit">
-</div>
-</form>
-</section>
 </body>
 </html>

@@ -16,8 +16,10 @@
 			<input type="text" class="text"><br><br>
 			<label for="projectDescription"><p>Describe your Project:</p></label>
 			<textarea name="projectDescription" id="" cols="70" rows="10"></textarea>
-		</div>  <div class="buttons">
-		<input class="submit" type="submit"></div>
+		</div>
+		<div class="buttons">
+			<input class="submit next" type="submit">
+		</div>
 		</form>
 	</div>
 
@@ -28,8 +30,11 @@
 			<option value="px">Pixels (px)</option>
 			<option value="mm">Millimeters (mm)</option>
 			</select></label>
-		</div>  <div class="buttons">
-		<input class="add" type="button" value="Add another Dimension" onClick="addInput('dimensionInput', 'dimension');"><input class="submit" type="submit"></div>
+		</div>
+		<div class="buttons">
+			<input class="add addDimension" type="button" value="Add another Dimension">
+			<input class="submit next" type="submit">
+		</div>
 		</form>
 	</div>
 
@@ -40,8 +45,8 @@
 			<select name="Platform"><option value="300dpi">Print</option><option value="100dpi">Digital</option></select><input type="text">
 		</div>
 		<div class="buttons">
-		<input class="add" type="button" value="Add another Platform" onClick="addInput('platformInput', 'platform');">
-		<input class="submit" type="submit"></div>
+		<input class="add addPlatform" type="button" value="Add another Platform">
+		<input class="submit next" type="submit"></div>
 		</form>
 	</div>
 
@@ -52,7 +57,8 @@
 			 <input type="file" name="pic" accept="image/*">
 		</div>
 		<div class="buttons">
-		<input class="add" type="button" value="Add another file" onClick="addInput('fileInput', 'file');"><input class="submit" type="submit">
+		<input class="add addFile" type="button" value="Add another file">
+		<input class="submit next" type="submit">
 		</div>
 		</form>
 	</div>
@@ -64,7 +70,8 @@
 			 <input class="left colour" type="color" name="favcolor" value="#ff0000">
 		</div>
 		<div class="buttons">
-		<input class="add" type="button" value="Add another Colour" onClick="addInput('colourInput', 'colour');"><input class="submit" type="submit">
+		<input class="add addColour" type="button" value="Add another Colour">
+		<input class="submit next" type="submit">
 		</div>
 		</form>
 	</div>
@@ -74,7 +81,11 @@
 		<div id="styleInput">
 			<label for="style"><p>Style Preference</p></label>
 			<input type="text" class="text" name="URL" placeholder="Enter URL...">
-		</div><div class="buttons"><input class="add" type="button" value="Add another preference" onClick="addInput('styleInput', 'style');"><input class="submit" type="submit"></div>
+		</div>
+		<div class="buttons">
+			<input class="add addStyle" type="button" value="Add another preference">
+			<input class="submit next" type="submit">
+			</div>
 		</form>
 	</div>
 
@@ -83,8 +94,9 @@
 		<div class="input">
 		<label for="budget"><p>Budget: </p><br>Range
 		<input class="range" type="number" name="Range"> to <input class="range" type="number">
-		</div><div class="buttons">
-		<input class="submit" type="submit"></div>
+		</div>
+		<div class="buttons">
+		<input class="submit next" type="submit"></div>
 		</form>
 	</div>
 
@@ -104,53 +116,55 @@
 </section>
 <script src="js/jquery.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/form.js"></script>
 <script>
 
-var counter = 1;
-var limit = 20;
-function addInput(divName, inputType){
-     if (counter == limit)  {
-          alert("You have reached the limit of adding " + counter + " inputs");
-     }
-     else {
+	Slider.init({
+		domElement: '#slider'
+	});
 
-     	var newdiv = document.createElement('div');
+	//Add a new dimension input on an addDimension button click
+	$('.addDimension').on('click', function(){
+		var dimeButton = Form.createButton('dimension');
+		Form.append(dimeButton, $('#dimensionInput'));
+	});
 
-     		switch(inputType) {
-     			case 'dimension':
-		          newdiv.innerHTML = "<div id='removable'><input class='dime' type='number' name='width[]'>&nbsp; X  &nbsp; <input class='dime' type='number' name='height[]'><select name='Measurements'><option value='px'>Pixels(px)</option><option value='mm'>Millimeters(mm)</option></select></label> <input class='remove' type='button' value='X' onClick='removeInput('removable');'></div>";
-		          counter++;
-		          break;
-		        case 'colour':
-		          newdiv.innerHTML = "<input class='left' type='color' name='favcolor' value='#ff0000'>";
-		          counter++;
-		          break;
-		        case 'platform':
-		          newdiv.innerHTML = "<select name='Platform'><option value='300dpi'>Print</option><option value='100dpi'>Digital</option></select><input type='text'>";
-		          counter++;
-		          break;
-		        case 'file':
-		          newdiv.innerHTML = "<input type='file' name='pic' accept=image/*'>";
-		          counter++;
-		          break;
-		         case 'style':
-		          newdiv.innerHTML = "<input type='text' class='text' name='URL' placeholder='Enter URL...''>";
-		          counter++;
-		          break;
-     		}
-          document.getElementById(divName).appendChild(newdiv);
-     }
-};
+	//Add a new platform input on an addPlatform button click
+	$('.addPlatform').on('click', function(){
+		var platButton = Form.createButton('platform');
+		Form.append(platButton, $('#platformInput'));
+	});
 
+	$('.addFile').on('click', function(){
+		var button = Form.createButton('file');
+		Form.append(button, $('#fileInput'));
+	});
 
-function removeInput(divName) {
-	//var elem = document.getElementById("dimensionInput");
-	//elem.parentNode.removeChild(elem);
-	console.log(this);
-};
-Slider.init({
-	domElement: '#slider'
-});
+	$('.addColour').on('click', function(){
+		var button = Form.createButton('colour');
+		Form.append(button, $('#colourInput'));
+	});
+
+	$('.addStyle').on('click', function(){
+		var button = Form.createButton('style');
+		Form.append(button, $('#styleInput'));
+	});
+
+	//All buttons with a class of next go to the next slide instead of submitting
+	$('.next').on('click', function(e){
+		e.preventDefault();
+		Slider.next();
+	})
+
+	//Use this to skip through the slider using up and down arrow keys
+	$(window).on('keyup', function(e){
+		console.log(e.keyCode);
+		if (e.keyCode === 40 || e.keyCode === 39) {
+			Slider.next();
+		} else if (e.keyCode === 38 || e.keyCode === 37) {
+			Slider.prev();
+		}
+	})
 </script>
 </body>
 </html>

@@ -3,14 +3,28 @@
 <head>
 	
 <link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script>
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+        $( "#background" ).fadeIn();
+    } else {
+        console.log('there');
+        $( " #background" ).fadeOut();
+    }
+});
 
+</script>
 
 </head>
 <body>
 
 <header>
-	<div class="logo">SPECTRUM</div>
+	<div id="background"></div>
+	<div class="logo"><img src="logo-spectrum-03.png" alt="" width="200"></div>
 	<nav>
 		<ul>
 			<a href="#what"><li>What is it?</li></a>
@@ -23,24 +37,66 @@
 </header>
 <section class="hero">
 	<div class="hero-section">
-		<h1 class="h1 hero-header">Make Life easier, <br>turn bears into bunnies</h1>
-		<div class="btn pink login">Sign Up</div>
+		<h1 class="h1 hero-header">Stop the frustration!<br>
+Generate a brief that helps all</h1>
+		<div class="pink">Sign Up</div>
 	</div>
 </section>	
 <section id="what">
-	
+	<section class="text"><h2>A Tool to make working together easier from the beginning</h2>
+
+	<p>A precise, easy to use and efficient way to generate briefs for projects you wish work work together on. Whether you are a client needing to generate a brief of yourself to share with an agency or an agency funneling your clients here to generate those beautiful easy and clear briefs we all desire, it’ll be a tool you won’t regret using.</p>
+	<br><br>
+	<p><b>Generate briefs easily using forms!</b></p>
+
+	</section>
+	<section class="img">
+		<img src="graphic-04.png">
+
+	</section>
 
 </section>
 <section id="how">
-	
+	<section class="how">
+	<div class="line"></div>
+	<div class="title"><h2>How it Works</h2></div>
+	<div class="line"></div>
+	</section>
+	<section class="process">
+		<div class="steps">
+			<img src="icons-05.png">
+			<p class="caption">A clients fills in the Spectrum brief generator form.</p>
+		</div>
+		<div class="steps">
+			<img src="icons-06.png">
+			<p class="caption">A PDF is created and sent to the client and the hired creative.</p>
+		</div>
+		<div class="steps">
+			<img src="icons-07.png">
+			<p class="caption">Both parties become really great friends and go for cocktails!</p>
+		</div>
+
+	</section>
 
 </section>
 <section id="contact">
-	
+	<section class="content">
+		<h1>ITS SO SIMPLE!<br>
+		A STEP TO GREATER BEGINNINGS!</h1>
+		<div class="btn login">Sign Up</div>
+	</section>
 
 </section>
 <footer>
-	
+	<section class="contact">
+		<h3>If you need to get in touch please email:  <a href="mailto:hello@spectrumbrief.co.uk">hello@spectrumbrief.co.uk</a></h3>
+	</section>
+	<section class="copy">
+		<div class="copyright">
+		<center>&copy; Spectrum briefs 2015
+		</div>
+
+	</section>
 </footer>
 
 </body>

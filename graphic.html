@@ -2,19 +2,30 @@
 <html>
 <head>
 	<title>Spectrum - Turns bears into bunnies</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-forms.css">
 </head>
 <body>
-
+<header>
+	<div class="logo left">
+		<img src="logo-spectrum-03.png" alt="" width="200">
+	</div>
+	<div class="nav right">
+		<div class="account">
+			<div class="navbtn">
+			<img src="account-icon.png" width="30" alt="" class="left"><h5>Account</h5>
+			</div>
+			</div>
+	</div>
+</header>
 <section class="forms slider-wrap">
 <div class="slider" id="slider">
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div id="detailsInput">
-			<label for="projectTitle"><p>Title of your Project:</p></label>
+			<label for="projectTitle">Title of your Project:</label>
 			<input type="text" class="text"><br><br>
-			<label for="projectDescription"><p>Describe your Project:</p></label>
+			<label for="projectDescription">Describe your Project:</label>
 			<textarea name="projectDescription" id="" cols="70" rows="10"></textarea>
 		</div>
 		<div class="buttons">
@@ -24,12 +35,12 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div id="dimensionInput">
-			<label for="dimensions"><p>Dimensions:</p><input class="dime" type="number" name="width[]">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]"><select name="Measurements">
+			<label for="dimensions">Dimensions:</label><input class="dime" type="number" name="width[]">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]"><select name="Measurements">
 			<option value="px">Pixels (px)</option>
 			<option value="mm">Millimeters (mm)</option>
-			</select></label>
+			</select>
 		</div>
 		<div class="buttons">
 			<input class="add addDimension" type="button" value="Add another Dimension">
@@ -39,9 +50,9 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div id="platformInput">
-			<label for="Platform"><p>Platform:</p></label>
+			<label for="Platform">Platform:</label>
 			<select name="Platform"><option value="300dpi">Print</option><option value="100dpi">Digital</option></select><input type="text">
 		</div>
 		<div class="buttons">
@@ -50,11 +61,11 @@
 		</form>
 	</div>
 
-	<div class="slide">
-		<form action="">
+	<div class="slide" >
+		<form class="formCenter"action="">
 		<div id="fileInput">
-			<label for="Assets"><p>Upload a File</p></label>
-			 <input type="file" name="pic" accept="image/*">
+			<label for="Assets">Upload a File</label>
+			 <input type="file" name="pic" accept="image/*" value="Upload">
 		</div>
 		<div class="buttons">
 		<input class="add addFile" type="button" value="Add another file">
@@ -64,10 +75,10 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div id="colourInput">
-			 <label for="Colour"><p>Colour Preference?</p></label>
-			 <input class="left colour" type="color" name="favcolor" value="#ff0000">
+			 <label for="Colour">Colour Preference?</label>
+			 <input class="colour" type="color" name="favcolor" value="#ff0000">
 		</div>
 		<div class="buttons">
 		<input class="add addColour" type="button" value="Add another Colour">
@@ -77,9 +88,9 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div id="styleInput">
-			<label for="style"><p>Style Preference</p></label>
+			<label for="style">Style Preference</label>
 			<input type="text" class="text" name="URL" placeholder="Enter URL...">
 		</div>
 		<div class="buttons">
@@ -90,9 +101,9 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div class="input">
-		<label for="budget"><p>Budget: </p><br>Range
+		<label for="budget">Budget:</label> <br>Range
 		<input class="range" type="number" name="Range"> to <input class="range" type="number">
 		</div>
 		<div class="buttons">
@@ -101,9 +112,9 @@
 	</div>
 
 	<div class="slide">
-		<form action="">
+		<form class="formCenter" action="">
 		<div class="input">
-		<label for="Notes"><p>Notes</p></label><br>
+		<label for="Notes">Notes</label><br>
 		<textarea rows="10" cols="70" name="notes">
 		</textarea></div><div class="buttons">
 		<input class="submit" type="submit">

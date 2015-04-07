@@ -11,7 +11,7 @@ var Form = (function(){
         return $button;
       break;
       case 'colour':
-        var button = "<div class='inputGroup'><input class='left' type='color' name='favcolor' value='#ff0000'></div>";
+        var button = "<div class='inputGroup'><input class='colour' type='color' name='favcolor' value='#ff0000'></div>";
         var $button = $(button);
         var remove = Form.createButton('remove');
         remove.appendTo($button);

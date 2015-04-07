@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script>
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+        $( "#background" ).fadeIn();
+    } else {
+        console.log('there');
+        $( " #background" ).fadeOut();
+    }
+});
+
+</script>
+
+</head>
+<body>
+<header>
+<div id="background"></div>
+	<div class="logo"><a href="index.html"><img src="logo-spectrum-03.png" alt="" width="200"></a></div>
+	<nav>
+		<ul>
+			<a href="index.html#what"><li>What is it?</li></a>
+			<a href="index.html#how"><li>How it works</li></a>
+			<a href="#contact"><li>Get in touch</li></a>
+			<a href="login.html"><li class="login">Login</li></a>
+		</ul>
+	</nav>	
+</header>
+<section class="SignupForm">
+	<h1>Sign Up</h1>
+	<form action="">
+		
+		<label for="Name">Full Name</label>
+		<input type="text" placeholder="Full Name">
+
+		<label for="Email">Email Address</label>
+		<input type="email" placeholder="milk@spectrum.com">
+
+		<label for="Email">Name of Agency / Hired Agency</label>
+		<input type="text" placeholder="example: Ascesis">
+
+			<label for="password">Password</label>
+		<input type="password" placeholder="Password"><br>
+
+			<label for="password">Confirm Password</label>
+		<input type="password" placeholder="Confirm Password"><br>
+
+		<input class="submit" type="submit" value="Sign Up"><a class="register" href="login.html">Already signed up?</a>
+
+	</form>
+
+</section>
+
+<footer>
+	<section class="contact">
+		<h3>If you need to get in touch please email:  <a href="mailto:hello@spectrumbrief.co.uk">hello@spectrumbrief.co.uk</a></h3>
+	</section>
+	<section class="copy">
+		<div class="copyright">
+		<center>&copy; Spectrum briefs 2015
+		</div>
+
+	</section>
+</footer>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <script src="js/jquery.min.js"></script>
@@ -26,9 +26,9 @@ $(window).scroll(function() {
 	<div class="logo"><a href="index.html"><img src="logo-spectrum-03.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
-			<a href="index.html#what"><li>What is it?</li></a>
-			<a href="index.html#how"><li>How it works</li></a>
-			<a href="#contact"><li>Get in touch</li></a>
+			<a class="none" href="index.html#what"><li>What is it?</li></a>
+			<a class="none" href="index.html#how"><li>How it works</li></a>
+			<a class="none" href="#contact"><li>Get in touch</li></a>
 			<a href="signup.html"><li class="login">Sign Up</li></a>
 		</ul>
 	</nav>	
@@ -38,10 +38,10 @@ $(window).scroll(function() {
 	<form action="">
 		
 		<label for="Email">Email Address</label>
-		<input type="text" placeholder="milk@spectrum.com">
+		<input class="fw" type="text" placeholder="milk@spectrum.com">
 
 		<label for="password">Password</label>
-		<input type="password" placeholder="Password"><br>
+		<input class="fw" type="password" placeholder="Password"><br>
 
 		<input class="submit" type="submit" value="Login"><a class="register" href="signup.html">Register now!</a>
 

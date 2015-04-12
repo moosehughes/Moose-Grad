@@ -2,11 +2,16 @@
 <html>
 <head>
 	
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="responsivemobilemenu/rmm-css/responsivemobilemenu.css" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="responsivemobilemenu/rmm-js/responsivemobilemenu.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 <script>
+
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 400) {
@@ -15,6 +20,19 @@ $(window).scroll(function() {
         console.log('there');
         $( " #background" ).fadeOut();
     }
+});
+
+(function($) {
+    var $window = $(window),
+        $html = $('html');
+
+    $window.resize(function resize(){
+        if ($window.width() < 514) {
+            return $html.removeClass('mobile');
+        }
+
+        $html.removeClass('rmm, graphite');
+    }).trigger('resize');
 });
 
 </script>
@@ -27,10 +45,10 @@ $(window).scroll(function() {
 	<div class="logo"><a href="index.html"><img src="logo-spectrum-03.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
-			<a href="#what"><li>What is it?</li></a>
-			<a href="#how"><li>How it works</li></a>
-			<a href="#contact"><li>Get in touch</li></a>
-			<a href="#"><li>Sign Up</li></a>
+			<a class="none" href="#what"><li>What is it?</li></a>
+			<a class="none" href="#how"><li>How it works</li></a>
+			<a class="none" href="#contact"><li>Get in touch</li></a>
+			<a class="none" href="signup.html"><li>Sign Up</li></a>
 			<a href="login.html"><li class="login">Login</li></a>
 		</ul>
 	</nav>	

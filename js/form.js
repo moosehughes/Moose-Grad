@@ -18,14 +18,14 @@ var Form = (function(){
         return $button;
       break;
       case 'platform':
-        var button = "<div class='inputGroup'><select name='Platform'><option value='300dpi'>Print</option><option value='100dpi'>Digital</option></select><input type='text'></div>";
+        var button = "<div class='inputGroup'><select name='Platform'><option value='300dpi'>Print</option><option value='100dpi'>Digital</option></select><input class='platform' type='text'></div>";
         var $button = $(button);
         var remove = Form.createButton('remove');
         remove.appendTo($button);
         return $button;
       break;
       case 'file':
-        var button = "<div class='inputGroup'><input type='file' name='pic' accept=image/*'></div>";
+        var button = "<div class='inputGroup'><input class='upload' type='file' name='pic' accept=image/*'></div>";
         var $button = $(button);
         var remove = Form.createButton('remove');
         remove.appendTo($button);

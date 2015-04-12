@@ -22,7 +22,7 @@ body{
 	height: 100%;
 }
 
-label{
+/*label{
 
 	font-family: sans-serif;
 	display:block;
@@ -39,14 +39,14 @@ form{
 }
 
 .formCenter{
-	width:35%;
+	width:85%;
 	height:100vh;
 	margin:0 auto;
-	padding:5% 0;
+	padding:0 auto;
 
 }
 h1{
-	font-size: 5.5em;
+	font-size: 2.5em;
 	margin:10px 0;
 }
 
@@ -181,7 +181,7 @@ textarea{
 
 header{
 	width:100%;
-	padding:0px 40px;
+	padding:0px 10px;
 	position: absolute;
 	z-index: 1;
 	position: fixed;
@@ -230,7 +230,7 @@ h5{
 }
 
 .logo{
-	padding:20px 0 0 0;
+	padding:5px 0 0 0;
 }
 /*==============================
 SLIDER STYLES
@@ -253,4 +253,35 @@ SLIDER STYLES
 	padding: 5% 0;
 }
 
+.none{
+	display: none;
+}
+@media only screen and (min-width: 640px) {
 
+
+.formCenter{
+	width:65%;
+	height:100vh;
+	margin:0 auto;
+	padding:5% 0;
+
+
+}
+
+.none{
+	display: inline-block;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+.formCenter{
+	width:45%;
+	height:100vh;
+	margin:0 auto;
+	padding:5% 0;
+
+}
+}

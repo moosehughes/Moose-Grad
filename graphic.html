@@ -3,6 +3,8 @@
 <head>
 	<title>Spectrum - Turns bears into bunnies</title>
 	<link rel="stylesheet" href="styles/style-forms.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
@@ -12,7 +14,7 @@
 	<div class="nav right">
 		<div class="account">
 			<div class="navbtn">
-			<img src="account-icon.png" width="30" alt="" class="left"><h5>Account</h5>
+			<img src="account-icon.png" width="30" alt="" class="left"><h5 class="none">Account</h5>
 			</div>
 			</div>
 	</div>
@@ -35,7 +37,9 @@
 	</div>
 
 	<div class="slide">
+
 		<form class="formCenter" action="">
+		<input class="skip prev back" type="button" value="Press Up to go back!">
 		<div id="dimensionInput">
 			<label for="dimensions">Dimensions:</label><input class="dime" type="number" name="width[]">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]"><select name="Measurements">
 			<option value="px">Pixels (px)</option>
@@ -45,7 +49,9 @@
 		<div class="buttons">
 			<input class="add addDimension" type="button" value="Add another Dimension">
 			<input class="submit next" type="submit">
+
 		</div>
+		<input class="skip next" type="button" value="Not Sure? Move on to Next Part">
 		</form>
 	</div>
 
@@ -53,11 +59,12 @@
 		<form class="formCenter" action="">
 		<div id="platformInput">
 			<label for="Platform">Platform:</label>
-			<select name="Platform"><option value="300dpi">Print</option><option value="100dpi">Digital</option></select><input type="text">
+			<select name="Platform"><option value="300dpi">Print</option><option value="72dpi">Digital</option></select><input class="platform" type="text">
 		</div>
 		<div class="buttons">
 		<input class="add addPlatform" type="button" value="Add another Platform">
 		<input class="submit next" type="submit"></div>
+		<input class="skip next" type="button" value="Not Sure? Move on to Next Part">
 		</form>
 	</div>
 
@@ -65,12 +72,13 @@
 		<form class="formCenter"action="">
 		<div id="fileInput">
 			<label for="Assets">Upload a File</label>
-			 <input type="file" name="pic" accept="image/*" value="Upload">
+			 <input class="upload" type="file" name="pic" accept="image/*" value="Upload">
 		</div>
 		<div class="buttons">
 		<input class="add addFile" type="button" value="Add another file">
 		<input class="submit next" type="submit">
 		</div>
+		<input class="skip next" type="button" value="No Files? Move on to Next Part">
 		</form>
 	</div>
 
@@ -84,6 +92,7 @@
 		<input class="add addColour" type="button" value="Add another Colour">
 		<input class="submit next" type="submit">
 		</div>
+		<input class="skip next" type="button" value="Not Sure? Move on to Next Part">
 		</form>
 	</div>
 
@@ -97,6 +106,7 @@
 			<input class="add addStyle" type="button" value="Add another preference">
 			<input class="submit next" type="submit">
 			</div>
+			<input class="skip next" type="button" value="Not Sure? Move on to Next Part">
 		</form>
 	</div>
 
@@ -108,6 +118,7 @@
 		</div>
 		<div class="buttons">
 		<input class="submit next" type="submit"></div>
+		<input class="skip next" type="button" value="Not Sure? Move on to Next Part">
 		</form>
 	</div>
 

@@ -27,17 +27,20 @@
 </header>
 <section class="SignupForm hero">
 	<h1>Sign Up</h1>
-	<form action="">
+	<form method='POST' action="createUser.php">
 		
-		<label for="Name">Full Name</label>
-		<input class="fw" type="text" placeholder="Full Name">
+		<label for="Name">First Name</label>
+		<input class="fw" type="text" placeholder="First Name" name='firstName'>
+
+		<label for="Name">Last Name</label>
+		<input class="fw" type="text" placeholder="Last Name" name='lastName'>
 
 		<label for="Email">Email Address</label>
-		<input class="fw"  type="email" placeholder="milk@spectral.com">
+		<input class="fw"  type="email" placeholder="milk@spectral.com" name='email'>
 
 
 		<label for="password">Password</label>
-		<input class="fw" type="password" placeholder="Password"><br>
+		<input class="fw" type="password" placeholder="Password" name='password'><br>
 
 			<label for="password">Confirm Password</label>
 		<input class="fw" type="password" placeholder="Confirm Password"><br>

@@ -8,6 +8,8 @@
 <script src="js/jquery.min.js"></script>
 <script>
 
+
+
 </script>
 
 </head>
@@ -25,26 +27,10 @@
 	</nav>
 	</div>
 </header>
-<section class="SignupForm hero">
-	<h1>Sign Up</h1>
-	<form action="">
-		
-		<label for="Name">Full Name</label>
-		<input class="fw" type="text" placeholder="Full Name">
-
-		<label for="Email">Email Address</label>
-		<input class="fw"  type="email" placeholder="milk@spectral.com">
-
-
-		<label for="password">Password</label>
-		<input class="fw" type="password" placeholder="Password"><br>
-
-			<label for="password">Confirm Password</label>
-		<input class="fw" type="password" placeholder="Confirm Password"><br>
-
-		<input class="submit" type="submit" value="Sign Up"><a class="register" href="login.html">Already signed up?</a>
-
-	</form>
+<section class="loginForm hero">
+	<h1>Thanks for Signing Up!</h1>
+	<p>An email should be on its way to you to confirm your account, but feel free to login now!</p>
+	<a href="login.php"><div class="pink">Login</div></a>
 
 </section>
 <section id="contact">

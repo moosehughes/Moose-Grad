@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="styles/style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="//use.typekit.net/vss5miu.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<script>
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+        $( "#background" ).fadeIn();
+    } else {
+        console.log('there');
+        $( " #background" ).fadeOut();
+    }
+});
+
+(function($) {
+    var $window = $(window),
+        $html = $('html');
+
+    $window.resize(function resize(){
+        if ($window.width() < 514) {
+            return $html.removeClass('mobile');
+        }
+
+        $html.removeClass('rmm, graphite');
+    }).trigger('resize');
+});
+
+</script>
+
+</head>
+<body>
+
+<section class="hero">
+
+	<div class="hero-section">
+		<img src="logo-11.png" width="140" alt=""><br><br>
+		<h1 class="h1 hero-header">"KEEP IT BRIEF"</h1>
+<p>Spectral is still being worked on, check back soon!</p>
+	</div>
+</section>	
+
+
+<section id="contact">
+	<h2>Got any questions? Get in touch!</h2>
+	<h3><a href="mailto:hello@getspectral.co" class="mail">hello@getspectral.co</a></h3>
+
+</section>
+
+<footer>
+	<section class="copy">
+		<div class="copyright">
+		<center>&copy; Spectral 2015
+		</div>
+
+	</section>
+</footer>
+
+</body>
+</html>

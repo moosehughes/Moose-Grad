@@ -27,7 +27,7 @@
 </header>
 <section class="SignupForm hero">
 	<h1>Sign Up</h1>
-	<form method='POST' action="createUser.php">
+	<form method='POST' action="signup-thanks.php">
 		
 		<label for="Name">First Name</label>
 		<input class="fw" type="text" placeholder="First Name" name='firstName'>

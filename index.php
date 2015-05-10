@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <script src="//use.typekit.net/vss5miu.js"></script>
@@ -49,8 +49,8 @@ $(window).scroll(function() {
 	<nav>
 		<ul>
 			
-			<a class="none" href="#"><li>Sign Up</li></a>
-			<a href="#"><li class="login">Login</li></a>
+			<a class="none" href="signup.php"><li>Sign Up</li></a>
+			<a href="login.php"><li class="logout"><i class="fa fa-sign-in"></i>Login</li></a>
 		</ul>
 	</nav>
 	</div>	
@@ -70,8 +70,8 @@ $(window).scroll(function() {
 		<h1 class="h1 hero-header">"KEEP IT BRIEF"</h1>
 <p>An Easier way for your clients <br>to generate 
 briefs for you.</p>
-		<a href="#"><div class="pink">Sign Up</div></a>
-		<a href="#">Login</a>
+		<a href="signup.php"><div class="pink">Sign Up</div></a>
+		<a href="login.php">Login</a>
 	</div>
 </section>	
 <section id="what">

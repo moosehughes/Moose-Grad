@@ -33,18 +33,18 @@
 		<p>Here you can view your previous projects and add new ones!</p>
 	</div>
 	<div class="project-c">
-		<div class="project-sq">
-			<div class="p-title">SPECTRAL BRAND BIBLE</div>
-			<a href="#"><div class="view-p">View Brief</div></a>
-		</div>
-		<div class="project-sq">
-			<div class="p-title">SPECTRAL BUSINESS CARDS</div>
-			<a href="#"><div class="view-p">View Brief</div></a>
-		</div>
-		<div class="project-sq">
-			<div class="p-title">SPECTRAL WEBSITE</div>
-			<a href="#"><div class="view-p">View Brief</div></a>
-		</div>
+		<a href="Briefs/Brief-04-SBC.pdf" target="_blank"><div class="project-sq">
+			<div class="p-title">EXAMPLE PROJECT</div>
+			<div class="view-p">View Brief</div>
+		</div></a>
+		<a href="Briefs/Brief-04-SBC.pdf" target="_blank"><div class="project-sq">
+			<div class="p-title">EXAMPLE PROJECT</div>
+			<div class="view-p">View Brief</div>
+		</div></a>
+		<a href="Briefs/Brief-04-SBC.pdf" target="_blank"><div class="project-sq">
+			<div class="p-title">EXAMPLE PROJECT</div>
+			<div class="view-p">View Brief</div>
+		</div></a>
 		<a href="projects.php"><div class="add-new">
 			<span class="plus">+</span><br>
 			<span class="plus-text">New Project</span>

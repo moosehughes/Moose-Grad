@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-<link rel="stylesheet" href="styles/style-forms.css">
+<link rel="stylesheet" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -11,21 +11,23 @@
 </head>
 <body>
 
-<header>
-	<div class="logo left">
-		<img src="logo-spectrum-03.png" alt="" width="200">
-	</div>
-	<div class="nav right">
-		<div class="account">
-			<div class="navbtn">
-			<img src="account-icon.png" width="30" alt="" class="left"><h5 class="none">Account</h5>
-			</div>
-			</div>
-	</div>
+	<header class="fixed">
+
+	<div class="logo"><a href="index.html"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<nav>
+		<ul>
+		<li><span class="add"><a href="dashboard.php">Back to Dashboard</a></span></li>
+		<li class="logout"><a href="index.php">Log out</a></li>	</ul>
+	</nav>
+	</div>	
+	
 </header>
-<section class="hero">
-	<div class="options">
-		<h1>Choose A Project</h1>
+<section class="dashboard">
+	<div class="d-heading">
+		<h1>Choose Your Project Type</h1>
+		<p>Select what kind of project you wish to create a brief for:</p>
+	</div>
+	<div class="proj-c">
 		<div class="project">
 			<a href="graphic.html"><h2>Graphic Design</h2></a>
 		</div>

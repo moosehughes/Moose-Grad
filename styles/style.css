@@ -123,6 +123,10 @@ header{
 
 
 }
+.p-title{
+	color:#15B3FF;
+}
+
 
 .fixed{
 		position: fixed;
@@ -284,6 +288,10 @@ nav ul a li:hover {
 	
 
 }
+
+.project-h{
+	padding:150px 0;
+}
 .project-c{
 	
 	width:80%;
@@ -297,6 +305,9 @@ nav ul a li:hover {
 	position: absolute;
 	font-size: 0.5em;
 
+}
+.fa{
+	margin:0px 5px;
 }
 .project-sq{
 	width:30%;
@@ -314,8 +325,8 @@ nav ul a li:hover {
 }
 .project-sq:hover{
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-	background-color: #0DA9F4;
-	color: #fff;
+	background-color: #0093DA;
+	color: #fff !important;
 
 }
 
@@ -464,6 +475,7 @@ nav ul a li:hover {
 .steps{
 	width: 100%;
 	padding:0 3%;
+
 	float:left;
 }
 
@@ -805,6 +817,11 @@ header{
 	padding-top: 15%
 }
 
+.submitForm{
+	padding-top: 10%;
+	text-align:center;
+}
+
 .hero-section img{
 	width:140px;
 	margin:0 auto;
@@ -836,4 +853,29 @@ header{
 .right{
 	margin-left: -60px
 
+}
+
+.width-btn{
+	width:300px;
+}
+
+.proj-c{
+	width:640px;
+	margin:0 auto;
+}
+
+.project{
+	width:300px;
+	height:300px;
+	float:left;
+	margin:100px 10px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+
+}
+
+.project a{
+	color:#15B3FF;
 }

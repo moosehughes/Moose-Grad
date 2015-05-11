@@ -13,7 +13,7 @@
 
 	<header class="fixed">
 
-	<div class="logo"><a href="index.html"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 		<li><span class="add"><a href="dashboard.php">Back to Dashboard</a></span></li>

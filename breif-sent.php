@@ -6,17 +6,13 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <script src="js/jquery.min.js"></script>
-<script>
-
-
-
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 </head>
 <body>
 <header class="fixed">
 
-	<div class="logo"><a href="index.html"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 		<li><span class="add"><a href="dashboard.php">Back to Dashboard</a></span></li>

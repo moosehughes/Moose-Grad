@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+		<title>One of us | Spectral</title>
 <link rel="stylesheet" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>

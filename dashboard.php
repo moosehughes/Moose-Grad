@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+		<title>Your Dashboard | Spectral</title>
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/fade.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>

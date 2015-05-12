@@ -13,26 +13,18 @@
 <body>
 <header>
 <div id="background"></div>
-	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
-	<div class="mainnav right">
-	<nav>
-		<ul>
-			<a  href="#what"><li>Overview</li></a>
-			<a  href="#how"><li>How it works</li></a>
-			<a href="mailto:hello@getspectral.co"><li>Contact us</li></a>
-		</ul>
-	</nav>
-	</div>
+	<div class="logo"><a href="index.php"><img src="images/logo-spectral-13.png" alt="" width="200"></a></div>
+	
 </header>
 <section class="loginForm hero">
 	<h1>Login</h1>
-	<form action="dashboard.php">
+	<form action="loading.php">
 		
 		<label for="Email">Email Address</label>
-		<input class="fw" type="text" placeholder="milk@spectrum.com">
+		<input class="fw" type="text" placeholder="milk@spectrum.com" value="joey-o@hotmail.co.uk">
 
 		<label for="password">Password</label>
-		<input class="fw" type="password" placeholder="Password"><br>
+		<input class="fw" type="password" placeholder="Password" value="banana"><br>
 
 		<input class="submit" type="submit" value="Login"><a class="register" href="signup.html">Register now!</a>
 

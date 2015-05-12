@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<circle fill="none" stroke="#fff" stroke-miterlimit="10" stroke-dasharray="11.8383,11.8383" cx="49.667" cy="50.333" r="49">
+
+      <animateTransform attributeName="transform"
+         attributeType="XML"
+         type="rotate"
+         from="0 50 50"
+         to="360 50 50"
+         dur="10s"
+         repeatCount="indefinite" />
+
+   </circle>   
+</g>
+<circle fill="#29ABE2" cx="49.667" cy="50.333" r="39"/>
+<path fill="#FFFFFF" d="M29.167,63L29.167,63c-1.925,0-3.5-1.575-3.5-3.5V42.833c0-1.925,1.575-3.5,3.5-3.5h0
+	c1.925,0,3.5,1.575,3.5,3.5V59.5C32.667,61.425,31.092,63,29.167,63z">
+   
+   <animateTransform id="sup"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      values="0,3;0,-3;0,0"
+      repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M39.167,63L39.167,63c-1.925,0-3.5-1.575-3.5-3.5V42.833c0-1.925,1.575-3.5,3.5-3.5h0
+	c1.925,0,3.5,1.575,3.5,3.5V59.5C42.667,61.425,41.092,63,39.167,63z">
+
+ <animateTransform id="sup"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      begin="0.1"
+      values="0,3;0,-3;0,0"
+      repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M49.167,63L49.167,63c-1.925,0-3.5-1.575-3.5-3.5V42.833c0-1.925,1.575-3.5,3.5-3.5h0
+	c1.925,0,3.5,1.575,3.5,3.5V59.5C52.667,61.425,51.092,63,49.167,63z">
+
+ <animateTransform id="sup"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      begin="0.2"
+      values="0,3;0,-3;0,0"
+      repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M59.167,63L59.167,63c-1.925,0-3.5-1.575-3.5-3.5V42.833c0-1.925,1.575-3.5,3.5-3.5h0
+	c1.925,0,3.5,1.575,3.5,3.5V59.5C62.667,61.425,61.092,63,59.167,63z">
+
+ <animateTransform id="sup"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      begin="0.3"
+      values="0,3;0,-3;0,0"
+      repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M69.167,63L69.167,63c-1.925,0-3.5-1.575-3.5-3.5V42.833c0-1.925,1.575-3.5,3.5-3.5h0
+	c1.925,0,3.5,1.575,3.5,3.5V59.5C72.667,61.425,71.092,63,69.167,63z">
+
+    <animateTransform id="sup"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      begin="0.4"
+      values="0,3;0,-3;0,0"
+      repeatCount="indefinite"/>
+   </path>
+</svg>

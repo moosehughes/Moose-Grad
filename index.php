@@ -7,6 +7,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 <script src="//use.typekit.net/vss5miu.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
@@ -41,11 +42,13 @@ $(window).scroll(function() {
 
 </head>
 <body>
-
+<div class="demo-m">
+	This is the Spectral Demo
+</div>
 <header class="fixed">
 
 	<div id="background">
-	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="images/logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 			
@@ -66,7 +69,7 @@ $(window).scroll(function() {
 	</nav>
 	</div>
 	<div class="hero-section">
-		<img src="logo-11.png" width="140" alt=""><br><br>
+		<img src="images/logo-11.png" width="140" alt=""><br><br>
 		<h1 class="h1 hero-header">"KEEP IT BRIEF"</h1>
 <p>An Easier way for your clients <br>to generate 
 briefs for you.</p>
@@ -96,15 +99,15 @@ Spectral asks the questions that you need to know to get the results that work b
 	</section>
 	<section class="process">
 		<div class="steps">
-			<img src="icons-05.png">
+			<img src="images/icons-05.png">
 			<p>A clients fills in the Spectral brief generator form.</p>
 		</div>
 		<div class="steps">
-			<img src="icons-06.png">
+			<img src="images/icons-06.png">
 			<p>A PDF is created and sent to the client and the hired creative.</p>
 		</div>
 		<div class="steps">
-			<img src="icons-07.png">
+			<img src="images/icons-07.png">
 			<p >Both parties become really great friends and go for cocktails!</p>
 		</div>
 

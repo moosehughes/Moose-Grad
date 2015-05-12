@@ -10,7 +10,7 @@
 <body>
 <header class="fixed">
 
-	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="images/logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 		<li><a href="dashboard.php"><span class="add">Back to Dashboard</span></a></li>
@@ -26,9 +26,10 @@
 		<form class="formCenter" action="">
 		<div id="detailsInput">
 			<label for="projectTitle">Title of your Project:</label>
-			<input type="text" class="text" value="Foxes leaflet"><br><br>
+			<input type="text" class="text" value="Spectral Business Cards"><br><br>
 			<label for="projectDescription">Describe your Project:</label>
-			<textarea name="projectDescription" id="" cols="70" rows="10" value="A Leaftlet to display our new offer, must be light and welcoming">A Leaftlet to display our new offer, must be light and welcoming</textarea>
+			<textarea name="projectDescription" id="" cols="70" rows="10">We need bespoke business cards printed for the new brand ‘SPECTRAL’. They need to be double sided
+logo on one side and information on the other side (attached)</textarea>
 		</div>
 		<div class="buttons">
 			<input class="submit next" type="submit" value="next">
@@ -41,7 +42,7 @@
 		<form class="formCenter" action="">
 		<input class="skip prev back" type="button" value="Press Up to go back!">
 		<div id="dimensionInput">
-			<label for="dimensions">Dimensions:</label><input class="dime" type="number" name="width[]" value="210">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]" value="297"><select name="Measurements">
+			<label for="dimensions">Dimensions:</label><input class="dime" type="number" name="width[]" value="85">&nbsp; X  &nbsp; <input class="dime" type="number" name="height[]" value="55"><select name="Measurements">
 			<option value="px">Pixels (px)</option>
 			<option value="mm">Millimeters (mm)</option>
 			</select>
@@ -59,7 +60,7 @@
 		<form class="formCenter" action="">
 		<div id="platformInput">
 			<label for="Platform">Platform:</label>
-			<select name="Platform"><option value="300dpi">Print</option><option value="72dpi">Digital</option></select><input class="platform" type="text" value="Web Banner">
+			<select name="Platform"><option value="300dpi">Print</option><option value="72dpi">Digital</option></select><input class="platform" type="text" value="Print">
 		</div>
 		<div class="buttons">
 		<input class="add addPlatform" type="button" value="Add another Platform">
@@ -126,7 +127,8 @@
 		<form class="formCenter" action="submit-confirm.php">
 		<div class="input">
 		<label for="Notes">Notes</label><br>
-		<textarea rows="10" cols="70" name="notes">
+		<textarea rows="10" cols="70" name="notes">I’d like the logo to be laminate both sides when
+printed and 1000 to be printed please.
 		</textarea></div><div class="buttons">
 		<input class="submit" type="submit">
 		</div>

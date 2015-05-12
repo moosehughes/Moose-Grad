@@ -15,36 +15,27 @@
 <body>
 <header>
 <div id="background"></div>
-	<div class="logo"><a href="index.html"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
-	<div class="mainnav right">
-	<nav>
-		<ul>
-			<a  href="#what"><li>Overview</li></a>
-			<a  href="#how"><li>How it works</li></a>
-			<a href="mailto:hello@getspectral.co"><li>Contact us</li></a>
-		</ul>
-	</nav>
-	</div>
+	<div class="logo center"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
 </header>
 <section class="SignupForm hero">
 	<h1>Sign Up</h1>
 	<form method='POST' action="signup-thanks.php">
 		
 		<label for="Name">First Name</label>
-		<input class="fw" type="text" placeholder="First Name" name='firstName'>
+		<input class="fw" type="text" placeholder="First Name" name='firstName' value="Joe">
 
 		<label for="Name">Last Name</label>
-		<input class="fw" type="text" placeholder="Last Name" name='lastName'>
+		<input class="fw" type="text" placeholder="Last Name" name='lastName' value="Jones">
 
 		<label for="Email">Email Address</label>
-		<input class="fw"  type="email" placeholder="milk@spectral.com" name='email'>
+		<input class="fw"  type="email" placeholder="milk@spectral.com" name='email' value="joey-o@hotmail.co.uk">
 
 
 		<label for="password">Password</label>
-		<input class="fw" type="password" placeholder="Password" name='password'><br>
+		<input class="fw" type="password" placeholder="Password" name='password' value="banana"><br>
 
 			<label for="password">Confirm Password</label>
-		<input class="fw" type="password" placeholder="Confirm Password"><br>
+		<input class="fw" type="password" placeholder="Confirm Password" value="banana"><br>
 
 		<input class="submit" type="submit" value="Sign Up"><a class="register" href="login.html">Already signed up?</a>
 

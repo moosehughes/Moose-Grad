@@ -12,7 +12,7 @@
 <body>
 <header class="fixed">
 
-	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="images/logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 		<li><span class="add"><a href="dashboard.php">Back to Dashboard</a></span></li>
@@ -22,7 +22,7 @@
 	
 </header>
 <section class="submitForm hero">
-	<img src="sent-img-18.png" width="400">
+	<img class="sent-img" src="images/sent-img-18.png" width="400">
 	<h1>Your brief is being sent!</h1>
 	<p>Hooray! you did it! your brief will arrive in your inbox soon as well as now appearing on your dashboard</p>
 	<a href="dashboard.php"><div class="pink width-btn">Back to dashboard</div></a>

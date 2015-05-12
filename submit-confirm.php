@@ -12,7 +12,7 @@
 <body>
 <header class="fixed">
 
-	<div class="logo"><a href="index.php"><img src="logo-spectral-13.png" alt="" width="200"></a></div>
+	<div class="logo"><a href="index.php"><img src="images/logo-spectral-13.png" alt="" width="200"></a></div>
 	<nav>
 		<ul>
 		<li><span class="add"><a href="dashboard.php">Back to Dashboard</a></span></li>
@@ -22,7 +22,7 @@
 	
 </header>
 <section class="submitForm hero">
-	<img src="Thumbs-up-17.png" width="200">
+	<img class="sub-img" src="images/Thumbs-up-17.png" width="200">
 	<h1>You've Finished!</h1>
 	<p>The next step is to submit the brief to your agency!</p>
 	<a href="breif-sent.php"><div class="pink width-btn">Send the Brief!</div></a>
